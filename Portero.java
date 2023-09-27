@@ -1,7 +1,7 @@
 public class Portero extends Jugador {
     private int paradas_e;
     private int goles_r;
-    private Float efectividad;
+    private float efectividad;
 
     public Portero(String nombre, String pais, int faltas, int goles_d, int total_lanzamientos, int paradas_e, int goles_r) {
         super.setNombre(nombre);
@@ -28,5 +28,9 @@ public class Portero extends Jugador {
 
     public int getGoles_r() {
         return goles_r;
+    }
+
+    public float getEfectividad() {
+        return efectividad;
     }
 }
