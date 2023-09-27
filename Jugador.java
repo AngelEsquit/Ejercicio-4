@@ -4,7 +4,6 @@ public class Jugador {
     private int faltas;
     private int goles_d;
     private int total_lanzamientos;
-    private Float efectividad;
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
@@ -44,13 +43,5 @@ public class Jugador {
 
     public int getTotal_lanzamientos() {
         return total_lanzamientos;
-    }
-
-    public void calcularEfectividad() {
-        this.efectividad = efectividad;
-    }
-
-    public Float getEfectividad() {
-        return efectividad;
     }
 }
