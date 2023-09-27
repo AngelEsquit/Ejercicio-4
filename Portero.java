@@ -1,6 +1,7 @@
 public class Portero extends Jugador {
     private int paradas_e;
     private int goles_r;
+    private Float efectividad;
 
     public void setParadas_e(int paradas_e) {
         this.paradas_e = paradas_e;
