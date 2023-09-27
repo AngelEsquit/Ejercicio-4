@@ -1,7 +1,7 @@
 public class Extremo extends Jugador {
     private int pases;
     private int asistencias_e;
-    private Float efectividad;
+    private float efectividad;
 
     public Extremo(String nombre, String pais, int faltas, int goles_d, int total_lanzamientos, int pases, int asistencias_e) {
         super.setNombre(nombre);
@@ -28,5 +28,9 @@ public class Extremo extends Jugador {
 
     public int getAsistencias_e() {
         return asistencias_e;
+    }
+
+    public float getEfectividad() {
+        return efectividad;
     }
 }
