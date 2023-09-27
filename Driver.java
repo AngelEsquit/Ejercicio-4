@@ -13,6 +13,9 @@ public class Driver {
         int faltas;
         int goles_d;
         int total_lanzamientos;
+        int tipo;
+        int paradas_e;
+        int goles_r;
 
         while (true) {
             printMenu(); //Menú principal
@@ -38,7 +41,25 @@ public class Driver {
                 total_lanzamientos = scanner.nextInt();
                 scanner.nextLine();
 
-                
+                System.out.println("Seleccione el tipo de jugador que desea agregar. \n 1: Portero \n 2: Extremo");
+                tipo = scanner.nextInt();
+                scanner.nextLine();
+
+                if (tipo == 1) {
+                    System.out.println("Ingrese la cantidad de total de lanzamientos del jugador:");
+                    paradas_e = scanner.nextInt();
+                    scanner.nextLine();
+
+                    System.out.println("Ingrese la cantidad de total de lanzamientos del jugador:");
+                    goles_r = scanner.nextInt();
+                    scanner.nextLine();
+
+                    porteros.add(new Portero(nombre, pais, faltas, goles_d, total_lanzamientos, paradas_e, goles_r));
+                }
+
+                else if (tipo == 2) {
+                    extremos.add(new Extremo(nombre, pais, faltas, goles_d, total_lanzamientos, tipo, opcion));
+                }
             }
 
             else if (opcion == 2) {
