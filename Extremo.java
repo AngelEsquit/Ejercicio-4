@@ -1,6 +1,7 @@
 public class Extremo extends Jugador {
     private int pases;
     private int asistencias_e;
+    private Float efectividad;
 
     public void setPases(int pases) {
         this.pases = pases;
